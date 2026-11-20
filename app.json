@@ -8,18 +8,41 @@
     "scheme": "akarak",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "androidStatusBar": {
+      "backgroundColor": "#2A4E73",
+      "barStyle": "light-content",
+      "translucent": false
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.cheikhb.Aqarak",
+      "config": {
+        "googleMapsApiKey": "AIzaSyDK2XrAyg8fWNI2l5EHsJM7oiuz51XSDmQ"
+      },
+      "infoPlist": {
+        "CFBundleLocalizations": [
+          "ar"
+        ],
+        "CFBundleDevelopmentRegion": "ar",
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
+      "package": "com.cheikhb.akarak",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "edgeToEdgeEnabled": false,
+      "predictiveBackGestureEnabled": false,
+      "softwareKeyboardLayoutMode": "resize",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDK2XrAyg8fWNI2l5EHsJM7oiuz51XSDmQ"
+        }
+      }
     },
     "web": {
       "output": "static",
@@ -38,11 +61,33 @@
             "backgroundColor": "#000000"
           }
         }
-      ]
+      ],
+      "expo-secure-store",
+      [
+        "expo-localization",
+        {
+          "supportedLocales": {
+            "ios": [
+              "ar"
+            ],
+            "android": [
+              "ar"
+            ]
+          }
+        }
+      ],
+      "expo-video",
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "6851e04f-bf7d-4db7-bc96-52f5940f4cb9"
+      }
     }
   }
 }

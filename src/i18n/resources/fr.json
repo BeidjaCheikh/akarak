@@ -1,0 +1,15 @@
+{
+  "header": { "login": "Login" },
+  "login": {
+    "titleA": "Se connecter à ",
+    "titleB": "Aqarak",
+    "phone": "Numéro de téléphone",
+    "password": "Mot de passe",
+    "phonePh": "Numéro de téléphone",
+    "passPh": "********",
+    "signIn": "Se connecter",
+    "forgot": "Mot de passe oublié ?",
+    "footerA": "Vous n'avez pas de compte ? ",
+    "footerB": "S'inscrire"
+  }
+}
